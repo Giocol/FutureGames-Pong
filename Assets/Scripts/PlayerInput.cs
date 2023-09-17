@@ -13,10 +13,13 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private float fieldBounds;
     [SerializeField] private GameObject ballPrefab;
     [SerializeField] private Vector3 ballStartPosition;
-    
+
+    private GameObject ballInstance;
     private InputAction movementAction;
     private Controls controls;
-    
+
+    public GameObject BallInstance { get => ballInstance; set => ballInstance = value; }
+
     private void Awake()
     {
         controls = new Controls();
@@ -58,7 +61,7 @@ public class PlayerInput : MonoBehaviour
     {
         if (!GameObject.FindObjectOfType<BallPhysics>())
         {
-            Instantiate(ballPrefab, ballStartPosition, Quaternion.identity);
+            ballInstance = Instantiate(ballPrefab, ballStartPosition, Quaternion.identity);
         }
     }
     
