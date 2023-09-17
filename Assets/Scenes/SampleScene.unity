@@ -1182,7 +1182,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1499,7 +1499,7 @@ MonoBehaviour:
   player2: {fileID: 228318288}
   player1ScoreText: {fileID: 1034751928}
   player2ScoreText: {fileID: 1896869044}
-  winText: {fileID: 0}
+  winText: {fileID: 1527516262}
   timeBeforeNewGame: 3
   scoreToWin: 5
 --- !u!4 &2002227999
